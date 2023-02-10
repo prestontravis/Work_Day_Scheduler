@@ -1,4 +1,6 @@
-# Work_Day_Scheduler
+## Work_Day_Scheduler
+
+# Description  
 
 GIVEN I am using a daily planner to create a schedule.   
 WHEN I open the planner.  
@@ -14,4 +16,8 @@ THEN the text for that event is saved in local storage.
 WHEN I refresh the page.  
 THEN the saved events persist.  
 
-deployed URL: https://trayprey.github.io/Work_Day_Scheduler/
+# Deployed URL
+
+https://trayprey.github.io/Work_Day_Scheduler/  
+
+# Screenshot
