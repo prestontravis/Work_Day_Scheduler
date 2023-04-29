@@ -18,6 +18,6 @@ THEN the saved events persist.
 
 # Deployed URL
 
-https://trayprey.github.io/Work_Day_Scheduler/  
+https://prestontravis.github.io/Work_Day_Scheduler/  
 
 # Screenshot
