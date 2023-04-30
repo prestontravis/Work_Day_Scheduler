@@ -5,7 +5,6 @@ $("#currentDay").text(currentTime);
 // Check the current time against each time block and add the appropriate class
 function checkTime() {
   var currentHour = dayjs().hour();
-  console.log(currentHour);
   $(".time-block").each(function () {
     var blockHour = parseInt($(this).attr("id"));
     if (blockHour < currentHour) {
@@ -21,12 +20,19 @@ function checkTime() {
 // Call checkTime to update the colors of the time blocks
 checkTime();
 
+// Retrieve the user's input from local storage and display it in the appropriate time block
+$(".description").each(function () {
+  var time = $(this).parent().attr("id");
+  $(this).val(localStorage.getItem(time));
+});
+
 // Add event listener to the save button to store the user's input in local storage
 $(".saveBtn").on("click", function () {
   var time = $(this).parent().attr("id");
   var description = $(this).siblings(".description").val();
   localStorage.setItem(time, description);
 });
+
   
 // Retrieve the user's input from local storage and display it in the appropriate time block
 $("#hour-9 .description").val(localStorage.getItem("hour-9"));
