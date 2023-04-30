@@ -5,8 +5,9 @@ $("#currentDay").text(currentTime);
 // Check the current time against each time block and add the appropriate class
 function checkTime() {
   var currentHour = dayjs().hour();
+  console.log(currentHour);
   $(".time-block").each(function () {
-    var blockHour = parseInt($(this).attr("id").split("-")[1]);
+    var blockHour = parseInt($(this).attr("id"));
     if (blockHour < currentHour) {
       $(this).addClass("past");
     } else if (blockHour === currentHour) {
